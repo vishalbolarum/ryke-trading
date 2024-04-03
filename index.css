@@ -22,6 +22,9 @@ nav {
     font-size: xx-large;
     font-family: Syncopate;
     box-sizing: border-box;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    background-color: black;
 }
 
 #logo > .country {
@@ -33,7 +36,7 @@ nav {
 main {
     position: relative;
     width: 100%;
-    height: 90vh; /* Adjust height as needed */
+    height: 100vh; /* Adjust height as needed */
     overflow: hidden;
 }
   
@@ -58,14 +61,18 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100%;
     display: flex;
     padding: 1rem;
     box-sizing: border-box;
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
     text-align: center; /* Centers text if it's on multiple lines */
-    /* Add more styling as needed */
-  }
+}
 
 h1 {
     font-weight: normal;
